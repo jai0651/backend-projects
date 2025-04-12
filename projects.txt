@@ -1,0 +1,108 @@
+🧑‍💻 Machine Coding Questions (OS / Networking / Linux Systems)
+1. Custom Process Manager
+Problem:
+Write a program to spawn and monitor child processes. Your code should:
+
+Launch a set of child processes
+
+Keep track of their PIDs
+
+If a process exits unexpectedly, restart it
+
+Gracefully stop all processes on termination signal
+
+Topics: Forking, signal handling, process management (Linux + C/Node/Python)
+
+2. Implement a Mini Shell
+Problem:
+Build a basic shell that can:
+
+Execute commands (ls, cat, etc.)
+
+Handle background tasks using &
+
+Redirect input/output using >, <
+
+Topics: I/O redirection, execvp, fork, pipes
+
+3. Build a TCP/UDP Echo Server
+Problem:
+Implement a TCP server and client that:
+
+Accepts multiple concurrent connections (via threads or async)
+
+Sends back the same message the client sent
+
+Bonus: Add a basic CLI to start the server and pass a port number.
+
+Topics: Sockets, concurrency, networking basics
+
+4. File Watcher Utility
+Problem:
+Write a utility that monitors a directory and logs any file changes (created, deleted, modified).
+
+Use inotify (Linux) or polling if using Node.js/Python.
+
+Topics: File systems, system calls, inotify API
+
+5. Build a Port Scanner
+Problem:
+Build a tool that:
+
+Takes an IP and a port range as input
+
+Scans open ports using TCP connect (or SYN if advanced)
+
+Lists all open ports
+
+Topics: Networking, TCP/IP, socket programming
+
+6. Custom top or ps Command
+Problem:
+Write a script or small program that mimics the behavior of top or ps.
+
+Show running processes, memory usage, CPU usage
+
+Update every 2 seconds
+
+Topics: /proc, system metrics, OS internals
+
+7. Rate Limiter using File Locking or Shared Memory
+Problem:
+Design a rate limiter (e.g., 5 requests per second) using file locks or shared memory. Simulate requests with threads or processes.
+
+Topics: IPC, semaphores, shared memory, file locks
+
+8. Simulate Virtual Memory Page Replacement
+Problem:
+Simulate LRU/FIFO page replacement algorithms:
+
+Input: sequence of page accesses and number of frames
+
+Output: number of page faults
+
+Topics: OS memory management, page tables, replacement algorithms
+
+9. Mini HTTP Server
+Problem:
+Build an HTTP server from scratch (no frameworks):
+
+Listen on a port
+
+Serve files from a directory
+
+Return 404 if file not found
+
+Topics: Networking, sockets, HTTP protocol basics
+
+10. Basic Log Parser
+Problem:
+Write a parser to:
+
+Analyze a Linux log file (e.g., auth.log, syslog)
+
+Count failed login attempts
+
+Identify IPs with most login attempts
+
+Topics: Scripting, log parsing, regex
